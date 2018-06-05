@@ -5,7 +5,7 @@ FactoryBot.define do
     password "default.123"
   end
   factory :message do
-    user_id 0
+    user_id 1
     date Date.today()
     content "Message default"
   end

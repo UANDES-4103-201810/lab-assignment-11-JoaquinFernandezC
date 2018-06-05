@@ -16,7 +16,7 @@ RSpec.describe User, type: :model do
     expect(@user2).to_not be_valid
   end
   it "Long username" do
-    @user = create(:user, username:"JoaquinFernandezCastellon")
+    @user = build(:user, username:"JoaquinFernandezCastellon")
     expect(@user).to_not be_valid
   end
 end
