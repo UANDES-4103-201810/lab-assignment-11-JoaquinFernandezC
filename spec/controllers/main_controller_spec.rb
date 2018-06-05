@@ -1,12 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe MainController, type: :controller do
-
-  describe "GET #index" do
-    it "returns http success" do
-      get :index
-      expect(response).to have_http_status(:success)
-    end
+RSpec.feature 'Index' do
+  scenario 'loadiong index page' do
+    visit '/'
+    expect(page).to have_content('Hello')
   end
-
 end
